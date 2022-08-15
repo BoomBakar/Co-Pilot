@@ -32,3 +32,14 @@
 
 
 
+//write a functionn to validate a user
+var user = "Dar";
+var password = "Dar!.12345";
+var regex = /^(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d]{8,}$/;
+var result = regex.test(password);
+if (result) {
+    console.log("Valid password");
+}
+else {
+    console.log("Invalid password");
+}
